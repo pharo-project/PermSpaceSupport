@@ -1,0 +1,26 @@
+Class {
+	#name : #PermSpaceTest,
+	#superclass : #TestCase,
+	#category : #PermSpace
+}
+
+{ #category : #tests }
+PermSpaceTest >> testMoveObjectCanBeReferenced [
+
+	| x |
+	x := String loremIpsum: 50.
+	x moveToPermSpace.
+
+	self assert: x equals: (String loremIpsum: 50)
+]
+
+{ #category : #tests }
+PermSpaceTest >> testPermanentMethodCanBeExecuted [
+
+	| anObject |
+	(APermClass >> #aMethod) moveToPermSpace.
+	anObject := APermClass new.
+
+	self assert: anObject aMethod equals: 10 factorial.
+	[ anObject aMethod ] bench.
+]
