@@ -1,7 +1,7 @@
 Extension { #name : #Character }
 
 { #category : #'*PermSpace' }
-Character >> moveToPermSpace [
+Character >> moveToPermSpace: anObject [
 	
 	"We do nothing for characters... are immediate"
 ]

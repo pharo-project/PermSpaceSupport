@@ -1,7 +1,7 @@
 Extension { #name : #SmallInteger }
 
 { #category : #'*PermSpace' }
-SmallInteger >> moveToPermSpace [
+SmallInteger >> moveToPermSpace: anObject [
 	
 	"I do nothing"
 ]

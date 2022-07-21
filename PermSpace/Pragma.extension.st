@@ -1,9 +1,10 @@
 Extension { #name : #Pragma }
 
 { #category : #'*PermSpace' }
-Pragma >> moveToPermSpace [
+Pragma >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace.
-	selector moveToPermSpace.
-	arguments do: [ :e | e moveToPermSpace ]
+	permSpace primMoveToPermSpace: self.
+	selector moveToPermSpace: permSpace.
+	arguments moveToPermSpace: permSpace.
+	arguments do: [ :e | e moveToPermSpace: permSpace ]
 ]

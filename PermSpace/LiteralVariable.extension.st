@@ -1,7 +1,7 @@
 Extension { #name : #LiteralVariable }
 
 { #category : #'*PermSpace' }
-LiteralVariable >> moveToPermSpace [
+LiteralVariable >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace 
+	permSpace primMoveToPermSpace: self
 ]

@@ -1,7 +1,8 @@
 Extension { #name : #BoxedFloat64 }
 
 { #category : #'*PermSpace' }
-BoxedFloat64 >> moveToPermSpace [
+BoxedFloat64 >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace 
+	permSpace primMoveToPermSpace: self.
+
 ]

@@ -1,7 +1,7 @@
 Extension { #name : #LargeInteger }
 
 { #category : #'*PermSpace' }
-LargeInteger >> moveToPermSpace [
+LargeInteger >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace 
+	permSpace primMoveToPermSpace: self
 ]

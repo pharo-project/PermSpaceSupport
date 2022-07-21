@@ -1,8 +1,8 @@
 Extension { #name : #TaCompositionElement }
 
 { #category : #'*PermSpace' }
-TaCompositionElement >> moveToPermSpace [
+TaCompositionElement >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace.
-	innerClass isClassOrTrait ifFalse: [ innerClass moveToPermSpace ].
+	permSpace primMoveToPermSpace: self.
+	innerClass isClassOrTrait ifFalse: [ innerClass moveToPermSpace: permSpace  ]
 ]

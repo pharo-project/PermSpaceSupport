@@ -1,7 +1,7 @@
 Extension { #name : #AbstractLayout }
 
 { #category : #'*PermSpace' }
-AbstractLayout >> moveToPermSpace [
+AbstractLayout >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace
+	permSpace primMoveToPermSpace: self
 ]

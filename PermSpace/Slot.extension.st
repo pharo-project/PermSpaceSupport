@@ -1,9 +1,8 @@
 Extension { #name : #Slot }
 
 { #category : #'*PermSpace' }
-Slot >> moveToPermSpace [
+Slot >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace.
-	name moveToPermSpace.
-
+	permSpace primMoveToPermSpace: self.
+	name moveToPermSpace: permSpace 
 ]

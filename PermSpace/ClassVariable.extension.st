@@ -1,8 +1,8 @@
 Extension { #name : #ClassVariable }
 
 { #category : #'*PermSpace' }
-ClassVariable >> moveToPermSpace [
+ClassVariable >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace.
-	name moveToPermSpace
+	permSpace primMoveToPermSpace: self.
+		name moveToPermSpace: permSpace 
 ]

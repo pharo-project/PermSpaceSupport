@@ -1,8 +1,8 @@
 Extension { #name : #CleanBlockClosure }
 
 { #category : #'*PermSpace' }
-CleanBlockClosure >> moveToPermSpace [
+CleanBlockClosure >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace.
-	self compiledBlock moveToPermSpace 
+	permSpace primMoveToPermSpace: self.
+	self compiledBlock moveToPermSpace: permSpace 
 ]

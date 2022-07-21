@@ -1,7 +1,8 @@
 Extension { #name : #GlobalVariable }
 
 { #category : #'*PermSpace' }
-GlobalVariable >> moveToPermSpace [
+GlobalVariable >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace
+	permSpace primMoveToPermSpace: self.
+
 ]
