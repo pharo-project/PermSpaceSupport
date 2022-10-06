@@ -1,7 +1,7 @@
 Extension { #name : #RPackage }
 
 { #category : #'*PermSpace' }
-RPackage >> moveContentToPermSpace [
+RPackage >> moveContentToPermSpace: permSpace [
 
 	self definedClasses
 		do: [ :e | 
@@ -9,6 +9,6 @@ RPackage >> moveContentToPermSpace [
 				<< e name;
 				crlf;
 				flush.
-			e moveToPermSpace: nil ]
+			e moveToPermSpace: permSpace ]
 		displayingProgress: [ :e | e name asString ]
 ]
