@@ -1,7 +1,8 @@
 Extension { #name : #Collection }
 
 { #category : #'*PermSpace' }
-Collection >> moveToPermSpace [
+Collection >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace
+	permSpace primMoveToPermSpace: self.
+
 ]

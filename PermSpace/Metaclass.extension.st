@@ -1,11 +1,11 @@
 Extension { #name : #Metaclass }
 
 { #category : #'*PermSpace' }
-Metaclass >> moveToPermSpace [
+Metaclass >> moveToPermSpace: permSpace [
+	
+	permSpace primMoveToPermSpace: self.
 
-	self primMoveToPermSpace.
-
-	methodDict moveToPermSpace.
-	layout moveToPermSpace.
-	organization moveToPermSpace.
+	methodDict moveToPermSpace: permSpace .
+	layout moveToPermSpace: permSpace .
+	organization moveToPermSpace: permSpace 
 ]

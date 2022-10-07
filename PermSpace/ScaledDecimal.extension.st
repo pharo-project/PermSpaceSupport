@@ -1,10 +1,10 @@
 Extension { #name : #ScaledDecimal }
 
 { #category : #'*PermSpace' }
-ScaledDecimal >> moveToPermSpace [
+ScaledDecimal >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace.
-	numerator moveToPermSpace.
-	denominator moveToPermSpace.
-	scale moveToPermSpace.
+	permSpace primMoveToPermSpace: self.
+	numerator moveToPermSpace: permSpace .
+	denominator moveToPermSpace: permSpace .
+	scale moveToPermSpace: permSpace 
 ]

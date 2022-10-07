@@ -9,7 +9,7 @@ PermSpaceTest >> testMoveObjectCanBeReferenced [
 
 	| x |
 	x := String loremIpsum: 50.
-	x moveToPermSpace.
+	x moveToPermSpace: nil.
 
 	self assert: x equals: (String loremIpsum: 50)
 ]
@@ -18,9 +18,9 @@ PermSpaceTest >> testMoveObjectCanBeReferenced [
 PermSpaceTest >> testPermanentMethodCanBeExecuted [
 
 	| anObject |
-	(APermClass >> #aMethod) moveToPermSpace.
+	APermClass >> #aMethod moveToPermSpace: nil.
 	anObject := APermClass new.
 
 	self assert: anObject aMethod equals: 10 factorial.
-	[ anObject aMethod ] bench.
+	[ anObject aMethod ] bench
 ]

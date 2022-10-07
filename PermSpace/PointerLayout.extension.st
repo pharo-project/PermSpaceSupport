@@ -1,8 +1,8 @@
 Extension { #name : #PointerLayout }
 
 { #category : #'*PermSpace' }
-PointerLayout >> moveToPermSpace [
-	
-	super moveToPermSpace.
-	slotScope moveToPermSpace.
+PointerLayout >> moveToPermSpace: permSpace [
+
+	super moveToPermSpace: permSpace.
+	slotScope moveToPermSpace: permSpace
 ]

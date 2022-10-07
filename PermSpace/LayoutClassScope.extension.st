@@ -1,8 +1,8 @@
 Extension { #name : #LayoutClassScope }
 
 { #category : #'*PermSpace' }
-LayoutClassScope >> moveToPermSpace [
+LayoutClassScope >> moveToPermSpace: permSpace [
 
-	super moveToPermSpace.
-	self do: [ :e | e moveToPermSpace ]
+	super moveToPermSpace: permSpace.
+	self do: [ :e | e moveToPermSpace: permSpace ]
 ]

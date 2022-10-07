@@ -1,9 +1,9 @@
 Extension { #name : #ClassOrganization }
 
 { #category : #'*PermSpace' }
-ClassOrganization >> moveToPermSpace [
+ClassOrganization >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace.
-	commentSourcePointer moveToPermSpace.
-	protocolOrganizer moveToPermSpace
+	permSpace primMoveToPermSpace: self.
+	commentSourcePointer moveToPermSpace: permSpace .
+	protocolOrganizer moveToPermSpace: permSpace 
 ]

@@ -1,22 +1,22 @@
 Extension { #name : #Class }
 
 { #category : #'*PermSpace' }
-Class >> moveToPermSpace [
-
-	self primMoveToPermSpace.
-
-	methodDict moveToPermSpace.
-	layout moveToPermSpace.
-	organization moveToPermSpace.
-	name moveToPermSpace.
+Class >> moveToPermSpace: permSpace [
 	
-	classPool ifNotNil: [  
-		classPool moveToPermSpace.
+	permSpace primMoveToPermSpace: self.
+
+	methodDict moveToPermSpace: permSpace.
+	layout moveToPermSpace: permSpace.
+	organization moveToPermSpace: permSpace.
+	name moveToPermSpace: permSpace.
+	
+	classPool ifNotNil: [
+		classPool moveToPermSpace: permSpace.
 		classPool associations do: [ :e | 
-			e moveToPermSpace.
-			e key moveToPermSpace ]].
-	
-	category moveToPermSpace.
-	
-	self classSide moveToPermSpace.
+			e moveToPermSpace: permSpace.
+			e key moveToPermSpace: permSpace ]].
+	category moveToPermSpace: permSpace.
+	sharedPools moveToPermSpace: permSpace.
+
+	self classSide moveToPermSpace: permSpace
 ]

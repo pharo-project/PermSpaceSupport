@@ -1,9 +1,11 @@
 Extension { #name : #AdditionalMethodState }
 
 { #category : #'*PermSpace' }
-AdditionalMethodState >> moveToPermSpace [
+AdditionalMethodState >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace.
-	selector moveToPermSpace.
-	self keysAndValuesDo: [ :k :v | k moveToPermSpace. v moveToPermSpace ]
+	permSpace primMoveToPermSpace: self.
+	selector moveToPermSpace: permSpace .
+	self keysAndValuesDo: [ :k :v | 
+		k moveToPermSpace: permSpace.
+		v moveToPermSpace: permSpace ]
 ]

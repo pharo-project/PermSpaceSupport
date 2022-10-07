@@ -1,13 +1,13 @@
 Extension { #name : #MethodDictionary }
 
 { #category : #'*PermSpace' }
-MethodDictionary >> moveToPermSpace [
+MethodDictionary >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace.
+	permSpace primMoveToPermSpace: self.
 
-	array moveToPermSpace.
-	array do: [ :e | e moveToPermSpace ].
-	
-	1 to: self basicSize do:
-		[:i | (self basicAt: i) ifNotNil: [ :key | key moveToPermSpace]]
+	array moveToPermSpace: permSpace .
+	array do: [ :e | e moveToPermSpace: permSpace  ].
+
+	1 to: self basicSize do: [ :i | 
+		(self basicAt: i) ifNotNil: [ :key | key moveToPermSpace: permSpace  ] ]
 ]

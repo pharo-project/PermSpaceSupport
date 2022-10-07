@@ -1,9 +1,10 @@
 Extension { #name : #ProtocolOrganizer }
 
 { #category : #'*PermSpace' }
-ProtocolOrganizer >> moveToPermSpace [
-	
-	self primMoveToPermSpace.
-	allProtocol moveToPermSpace.
-	protocols do: [:e | e moveToPermSpace].
+ProtocolOrganizer >> moveToPermSpace: permSpace [
+
+	permSpace primMoveToPermSpace: self.
+	allProtocol moveToPermSpace: permSpace.
+	protocols moveToPermSpace: permSpace.
+	protocols do: [ :e | e moveToPermSpace: permSpace ]
 ]

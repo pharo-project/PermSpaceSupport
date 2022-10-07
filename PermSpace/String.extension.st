@@ -1,7 +1,8 @@
 Extension { #name : #String }
 
 { #category : #'*PermSpace' }
-String >> moveToPermSpace [
+String >> moveToPermSpace: permSpace [
 	
-	self primMoveToPermSpace
+	permSpace primMoveToPermSpace: self.
+
 ]
