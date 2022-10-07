@@ -4,11 +4,6 @@ Extension { #name : #RPackage }
 RPackage >> moveContentToPermSpace: permSpace [
 
 	self definedClasses
-		do: [ :e | 
-			Stdio stdout
-				<< e name;
-				crlf;
-				flush.
-			e moveToPermSpace: permSpace ]
+		do: [ :e | e moveToPermSpace: permSpace ]
 		displayingProgress: [ :e | e name asString ]
 ]
