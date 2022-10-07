@@ -9,10 +9,12 @@ Class >> moveToPermSpace: permSpace [
 	layout moveToPermSpace: permSpace.
 	organization moveToPermSpace: permSpace.
 	name moveToPermSpace: permSpace.
-	classPool moveToPermSpace: permSpace.
-	classPool associations do: [ :e | 
-		e moveToPermSpace: permSpace.
-		e key moveToPermSpace: permSpace ].
+	
+	classPool ifNotNil: [
+		classPool moveToPermSpace: permSpace.
+		classPool associations do: [ :e | 
+			e moveToPermSpace: permSpace.
+			e key moveToPermSpace: permSpace ]].
 	category moveToPermSpace: permSpace.
 	sharedPools moveToPermSpace: permSpace.
 
