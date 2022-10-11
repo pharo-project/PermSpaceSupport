@@ -18,7 +18,7 @@ PermSpaceInBulk >> flush [
 PermSpaceInBulk >> initialize [
 
 	super initialize.
-	objects := Set new
+	objects := IdentitySet new
 ]
 
 { #category : #api }

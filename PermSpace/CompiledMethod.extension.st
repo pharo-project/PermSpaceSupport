@@ -9,5 +9,6 @@ CompiledMethod >> moveToPermSpace: permSpace [
 
 	permSpace primMoveToPermSpace: self.
 
-	self allLiterals do: [ :e | e moveToPermSpace: permSpace ]
+	self allLiterals do: [ :e | 
+		e moveToPermSpaceWithContent: permSpace ]
 ]

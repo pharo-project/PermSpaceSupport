@@ -15,8 +15,12 @@ Class >> moveToPermSpace: permSpace [
 		classPool associations do: [ :e | 
 			e moveToPermSpace: permSpace.
 			e key moveToPermSpace: permSpace ]].
+	
+	subclasses ifNotNil: [subclasses moveToPermSpace: permSpace].
 	category moveToPermSpace: permSpace.
 	sharedPools moveToPermSpace: permSpace.
+
+	environment moveToPermSpace: permSpace.
 
 	self classSide moveToPermSpace: permSpace
 ]
