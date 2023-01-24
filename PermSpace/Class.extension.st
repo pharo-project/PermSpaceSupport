@@ -3,6 +3,9 @@ Extension { #name : #Class }
 { #category : #'*PermSpace' }
 Class >> moveToPermSpace: permSpace [
 	
+	(permSpace isInPermSpace: permSpace)
+		ifTrue: [ ^ self ].
+	
 	permSpace primMoveToPermSpace: self.
 
 	methodDict moveToPermSpace: permSpace.

@@ -2,6 +2,9 @@ Extension { #name : #MethodDictionary }
 
 { #category : #'*PermSpace' }
 MethodDictionary >> moveToPermSpace: permSpace [
+
+	(permSpace isInPermSpace: permSpace)
+		ifTrue: [ ^ self ].
 	
 	permSpace primMoveToPermSpace: self.
 

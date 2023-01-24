@@ -9,6 +9,9 @@ LayoutClassScope >> isLayoutEmpty [
 { #category : #'*PermSpace' }
 LayoutClassScope >> moveToPermSpace: permSpace [
 
+	(permSpace isInPermSpace: permSpace)
+		ifTrue: [ ^ self ].
+
 	permSpace primMoveToPermSpace: self.
 	parentScope isLayoutEmpty ifTrue: [ parentScope moveToPermSpace: permSpace ].	
 	self do: [ :e | e moveToPermSpace: permSpace ]

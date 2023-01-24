@@ -3,6 +3,9 @@ Extension { #name : #CompiledBlock }
 { #category : #'*PermSpace' }
 CompiledBlock >> moveToPermSpace: permSpace [
 
+	(permSpace isInPermSpace: permSpace)
+		ifTrue: [ ^ self ].
+
 	permSpace primMoveToPermSpace: self.
 
 	self allLiterals do: [ :e | 

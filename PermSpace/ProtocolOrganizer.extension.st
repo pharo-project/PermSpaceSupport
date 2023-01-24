@@ -3,6 +3,9 @@ Extension { #name : #ProtocolOrganizer }
 { #category : #'*PermSpace' }
 ProtocolOrganizer >> moveToPermSpace: permSpace [
 
+	(permSpace isInPermSpace: permSpace)
+		ifTrue: [ ^ self ].
+
 	permSpace primMoveToPermSpace: self.
 	allProtocol moveToPermSpace: permSpace.
 	protocols moveToPermSpace: permSpace.

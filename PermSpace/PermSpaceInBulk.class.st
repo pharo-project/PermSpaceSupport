@@ -22,6 +22,12 @@ PermSpaceInBulk >> initialize [
 ]
 
 { #category : #api }
+PermSpaceInBulk >> isInPermSpace: anObj [
+
+	^ objects includes: anObj
+]
+
+{ #category : #api }
 PermSpaceInBulk >> primMoveToPermSpace: obj [
 
 	objects add: obj
