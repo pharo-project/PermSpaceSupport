@@ -3,7 +3,7 @@ Extension { #name : #CompiledBlock }
 { #category : #'*PermSpace' }
 CompiledBlock >> moveToPermSpace: permSpace [
 
-	(permSpace isInPermSpace: permSpace)
+	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].
 
 	permSpace primMoveToPermSpace: self.

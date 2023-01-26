@@ -1,7 +1,7 @@
-Extension { #name : #ClassVariable }
+Extension { #name : #AdditionalBinding }
 
 { #category : #'*PermSpace' }
-ClassVariable >> moveToPermSpace: permSpace [
+AdditionalBinding >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].

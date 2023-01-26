@@ -2,8 +2,8 @@ Extension { #name : #Metaclass }
 
 { #category : #'*PermSpace' }
 Metaclass >> moveToPermSpace: permSpace [
-	
-	(permSpace isInPermSpace: permSpace)
+
+	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].	
 	
 	permSpace primMoveToPermSpace: self.

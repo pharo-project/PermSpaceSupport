@@ -39,6 +39,12 @@ EscapeObjectSimulator >> isEscapingObject: obj [
 ]
 
 { #category : #testing }
+EscapeObjectSimulator >> isInPermSpace: aFamixJavaModel [ 
+	
+	^ objects includes: aFamixJavaModel
+]
+
+{ #category : #testing }
 EscapeObjectSimulator >> isInSpace: obj [
 
 	| wellKnownObjs |

@@ -3,7 +3,7 @@ Extension { #name : #AdditionalMethodState }
 { #category : #'*PermSpace' }
 AdditionalMethodState >> moveToPermSpace: permSpace [
 
-	(permSpace isInPermSpace: permSpace)
+	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].
 	
 	permSpace primMoveToPermSpace: self.

@@ -3,7 +3,7 @@ Extension { #name : #ScaledDecimal }
 { #category : #'*PermSpace' }
 ScaledDecimal >> moveToPermSpace: permSpace [
 
-	(permSpace isInPermSpace: permSpace)
+	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].
 	
 	permSpace primMoveToPermSpace: self.

@@ -1,23 +1,20 @@
-Extension { #name : #FM3Element }
+Extension { #name : #MooseGroupStorage }
 
 { #category : #'*PermSpace-Moose' }
-FM3Element >> moveToPermSpace: permSpace [
-
+MooseGroupStorage >> moveToPermSpace: permSpace [
+	
 	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].
 
 	permSpace primMoveToPermSpace: self.
-	
 ]
 
 { #category : #'*PermSpace-Moose' }
-FM3Element >> moveToPermSpaceWithContent: permSpace [
-
+MooseGroupStorage >> moveToPermSpaceWithContent: permSpace [
+	
 	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].
 
 	self moveToPermSpace: permSpace.
-	
-	self class allSlots do: [ :aSlot | 
-		(aSlot read: self) moveToPermSpaceWithContent: permSpace ]	
+	species moveToPermSpaceWithContent: permSpace
 ]

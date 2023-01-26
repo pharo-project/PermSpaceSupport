@@ -1,11 +1,12 @@
-Extension { #name : #ClassVariable }
+Extension { #name : #Announcer }
 
 { #category : #'*PermSpace' }
-ClassVariable >> moveToPermSpace: permSpace [
-	
+Announcer >> moveToPermSpace: permSpace [
+
 	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].
 	
 	permSpace primMoveToPermSpace: self.
-	name moveToPermSpace: permSpace 
+
+	registry moveToPermSpace: permSpace
 ]

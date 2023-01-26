@@ -9,7 +9,7 @@ LayoutClassScope >> isLayoutEmpty [
 { #category : #'*PermSpace' }
 LayoutClassScope >> moveToPermSpace: permSpace [
 
-	(permSpace isInPermSpace: permSpace)
+	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].
 
 	permSpace primMoveToPermSpace: self.

@@ -1,11 +1,12 @@
-Extension { #name : #ClassVariable }
+Extension { #name : #FMMultivalueLink }
 
 { #category : #'*PermSpace' }
-ClassVariable >> moveToPermSpace: permSpace [
+FMMultivalueLink >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].
 	
 	permSpace primMoveToPermSpace: self.
-	name moveToPermSpace: permSpace 
+
+	values moveToPermSpace: permSpace.
 ]

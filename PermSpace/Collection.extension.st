@@ -3,16 +3,11 @@ Extension { #name : #Collection }
 { #category : #'*PermSpace' }
 Collection >> moveToPermSpace: permSpace [
 	
-	(permSpace isInPermSpace: permSpace)
-		ifTrue: [ ^ self ].	
-	
-	permSpace primMoveToPermSpace: self.
-
+	self subclassResponsibility
 ]
 
 { #category : #'*PermSpace' }
 Collection >> moveToPermSpaceWithContent: permSpace [
-
-	self moveToPermSpace: permSpace.
-	self do: [ :e | e moveToPermSpaceWithContent: permSpace ]
+	
+	self moveToPermSpace: permSpace 
 ]

@@ -3,7 +3,7 @@ Extension { #name : #Slot }
 { #category : #'*PermSpace' }
 Slot >> moveToPermSpace: permSpace [
 	
-	(permSpace isInPermSpace: permSpace)
+	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].
 	
 	permSpace primMoveToPermSpace: self.

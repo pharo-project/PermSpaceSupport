@@ -3,7 +3,7 @@ Extension { #name : #Class }
 { #category : #'*PermSpace' }
 Class >> moveToPermSpace: permSpace [
 	
-	(permSpace isInPermSpace: permSpace)
+	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].
 	
 	permSpace primMoveToPermSpace: self.

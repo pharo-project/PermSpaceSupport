@@ -1,11 +1,11 @@
-Extension { #name : #ClassVariable }
+Extension { #name : #Semaphore }
 
 { #category : #'*PermSpace' }
-ClassVariable >> moveToPermSpace: permSpace [
+Semaphore >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)
 		ifTrue: [ ^ self ].
 	
 	permSpace primMoveToPermSpace: self.
-	name moveToPermSpace: permSpace 
+
 ]
