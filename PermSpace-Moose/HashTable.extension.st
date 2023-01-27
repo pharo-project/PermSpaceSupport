@@ -1,6 +1,6 @@
 Extension { #name : #HashTable }
 
-{ #category : #'*PermSpace' }
+{ #category : #'*PermSpace-Moose' }
 HashTable >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)
@@ -15,7 +15,7 @@ HashTable >> moveToPermSpace: permSpace [
 	
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : #'*PermSpace-Moose' }
 HashTable >> moveToPermSpaceWithContent: permSpace [
 	
 	(permSpace isInPermSpace: self)
