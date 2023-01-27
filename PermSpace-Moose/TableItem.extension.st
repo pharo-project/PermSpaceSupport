@@ -1,6 +1,6 @@
 Extension { #name : #TableItem }
 
-{ #category : #'*PermSpace' }
+{ #category : #'*PermSpace-Moose' }
 TableItem >> moveToPermSpace: permSpace [ 
 
 	(permSpace isInPermSpace: self)
@@ -10,7 +10,7 @@ TableItem >> moveToPermSpace: permSpace [
 
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : #'*PermSpace-Moose' }
 TableItem >> moveToPermSpaceWithContent: permSpace [ 
 
 	(permSpace isInPermSpace: self)
