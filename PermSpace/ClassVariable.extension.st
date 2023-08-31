@@ -9,3 +9,10 @@ ClassVariable >> moveToPermSpace: permSpace [
 	permSpace primMoveToPermSpace: self.
 	name moveToPermSpace: permSpace 
 ]
+
+{ #category : #'*PermSpace' }
+ClassVariable >> moveToPermSpaceWithContent: permSpace [
+	
+	self moveToPermSpace: permSpace.
+	value moveToPermSpaceWithContent: permSpace
+]

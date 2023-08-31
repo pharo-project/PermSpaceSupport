@@ -3,7 +3,13 @@ Extension { #name : #Collection }
 { #category : #'*PermSpace' }
 Collection >> moveToPermSpace: permSpace [
 	
-	self subclassResponsibility
+	(permSpace isInPermSpace: self)
+		ifTrue: [ ^ self ].	
+	
+	permSpace primMoveToPermSpace: self.
+	
+	1 to: self basicSize do: [ :e |
+		e moveToPermSpaceWithContent: e].
 ]
 
 { #category : #'*PermSpace' }

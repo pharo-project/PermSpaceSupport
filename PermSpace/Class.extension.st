@@ -16,14 +16,16 @@ Class >> moveToPermSpace: permSpace [
 	classPool ifNotNil: [
 		classPool moveToPermSpace: permSpace.
 		classPool associations do: [ :e | 
-			e moveToPermSpace: permSpace.
-			e key moveToPermSpace: permSpace ]].
+			e moveToPermSpaceWithContent: permSpace ]].
 	
 	subclasses ifNotNil: [subclasses moveToPermSpace: permSpace].
 	category moveToPermSpace: permSpace.
 	sharedPools moveToPermSpace: permSpace.
 
 	environment moveToPermSpace: permSpace.
+	
+	(self class allSlots reject: [ :e | Class withAllSuperclasses includes: e owningClass ])
+		do: [ :e | (e read: self) moveToPermSpaceWithContent: permSpace ].
 
 	self classSide moveToPermSpace: permSpace
 ]

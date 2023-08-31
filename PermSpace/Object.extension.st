@@ -3,7 +3,10 @@ Extension { #name : #Object }
 { #category : #'*PermSpace' }
 Object >> moveToPermSpace: permSpace [
 
-	self subclassResponsibility 
+	(permSpace isInPermSpace: self)
+		ifTrue: [ ^ self ].	
+	
+	permSpace primMoveToPermSpace: self
 ]
 
 { #category : #'*PermSpace' }
