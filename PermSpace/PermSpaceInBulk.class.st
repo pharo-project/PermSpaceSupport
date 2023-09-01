@@ -32,3 +32,11 @@ PermSpaceInBulk >> primMoveToPermSpace: obj [
 
 	objects add: obj
 ]
+
+{ #category : #api }
+PermSpaceInBulk >> primMoveToPermSpaceAllOldObjects [
+	
+	<primitive: 93 error: ec>
+	
+	^ self primitiveFailed
+]
