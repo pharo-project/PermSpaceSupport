@@ -1,6 +1,6 @@
-Extension { #name : #LiteralVariable }
+Extension { #name : 'LiteralVariable' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 LiteralVariable >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

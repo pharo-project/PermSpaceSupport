@@ -1,6 +1,6 @@
-Extension { #name : #TaEmptyComposition }
+Extension { #name : 'TaEmptyComposition' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 TaEmptyComposition >> moveToPermSpace: aPermSpace [
 
 	(aPermSpace isInPermSpace: self)

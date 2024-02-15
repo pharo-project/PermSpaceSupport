@@ -1,6 +1,6 @@
-Extension { #name : #ExternalStructure }
+Extension { #name : 'ExternalStructure' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 ExternalStructure class >> moveToPermSpace: permSpace [
 
 	super moveToPermSpace: permSpace.

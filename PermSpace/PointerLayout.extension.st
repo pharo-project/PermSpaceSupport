@@ -1,6 +1,6 @@
-Extension { #name : #PointerLayout }
+Extension { #name : 'PointerLayout' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 PointerLayout >> moveToPermSpace: permSpace [
 
 	super moveToPermSpace: permSpace.

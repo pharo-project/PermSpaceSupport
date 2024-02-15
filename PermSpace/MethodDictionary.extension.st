@@ -1,6 +1,6 @@
-Extension { #name : #MethodDictionary }
+Extension { #name : 'MethodDictionary' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 MethodDictionary >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

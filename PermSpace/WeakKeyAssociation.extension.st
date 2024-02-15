@@ -1,6 +1,6 @@
-Extension { #name : #WeakKeyAssociation }
+Extension { #name : 'WeakKeyAssociation' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 WeakKeyAssociation >> moveToPermSpace: aPermSpace [
 	
 	"I don't move myself to the permSpace"

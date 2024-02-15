@@ -1,6 +1,6 @@
-Extension { #name : #WordArray }
+Extension { #name : 'WordArray' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 WordArray >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)
@@ -9,7 +9,7 @@ WordArray >> moveToPermSpace: permSpace [
 	permSpace primMoveToPermSpace: self
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 WordArray >> moveToPermSpaceWithContent: permSpace [
 	
 	self moveToPermSpace: permSpace

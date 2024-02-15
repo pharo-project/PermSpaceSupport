@@ -1,6 +1,6 @@
-Extension { #name : #Boolean }
+Extension { #name : 'Boolean' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Boolean >> moveToPermSpace: anObject [
 	
 	"Do nothing for true / false"

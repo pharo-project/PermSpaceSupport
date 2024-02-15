@@ -1,6 +1,6 @@
-Extension { #name : #Association }
+Extension { #name : 'Association' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Association >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)
@@ -10,7 +10,7 @@ Association >> moveToPermSpace: permSpace [
 
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Association >> moveToPermSpaceWithContent: permSpace [
 	
 	(permSpace isInPermSpace: self)

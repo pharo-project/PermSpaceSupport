@@ -1,6 +1,6 @@
-Extension { #name : #GlobalVariable }
+Extension { #name : 'GlobalVariable' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 GlobalVariable >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)

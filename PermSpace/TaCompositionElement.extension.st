@@ -1,6 +1,6 @@
-Extension { #name : #TaCompositionElement }
+Extension { #name : 'TaCompositionElement' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 TaCompositionElement >> moveToPermSpace: aPermSpace [
 
 	(aPermSpace isInPermSpace: self)

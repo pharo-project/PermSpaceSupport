@@ -1,6 +1,6 @@
-Extension { #name : #TaRemoveMethod }
+Extension { #name : 'TaRemoveMethod' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 TaRemoveMethod >> moveToPermSpace: aPermSpace [
 
 	(aPermSpace isInPermSpace: self)

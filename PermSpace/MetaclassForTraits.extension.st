@@ -1,6 +1,6 @@
-Extension { #name : #MetaclassForTraits }
+Extension { #name : 'MetaclassForTraits' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 MetaclassForTraits >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

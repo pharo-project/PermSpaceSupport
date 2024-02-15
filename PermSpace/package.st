@@ -1,1 +1,1 @@
-Package { #name : #PermSpace }
+Package { #name : 'PermSpace' }

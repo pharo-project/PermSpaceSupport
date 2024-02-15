@@ -1,6 +1,6 @@
-Extension { #name : #BoxedFloat64 }
+Extension { #name : 'BoxedFloat64' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 BoxedFloat64 >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)

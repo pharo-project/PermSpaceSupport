@@ -1,6 +1,6 @@
-Extension { #name : #SmalltalkImage }
+Extension { #name : 'SmalltalkImage' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 SmalltalkImage >> convertToComposedImageFormat [
 	
 	SnapshotOperation useComposedFormatNext.
@@ -8,14 +8,14 @@ SmalltalkImage >> convertToComposedImageFormat [
 	^ self snapshot: true andQuit: false.
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 SmalltalkImage >> convertToComposedImageFormatAs: newImageName [
 	
 	SnapshotOperation useComposedFormatNext.
 	^ self saveAs: newImageName.
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 SmalltalkImage >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

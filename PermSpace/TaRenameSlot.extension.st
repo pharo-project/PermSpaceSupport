@@ -1,6 +1,6 @@
-Extension { #name : #TaRenameSlot }
+Extension { #name : 'TaRenameSlot' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 TaRenameSlot >> moveToPermSpace: aPermSpace [
 
 	super moveToPermSpace: aPermSpace.

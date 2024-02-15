@@ -1,6 +1,6 @@
-Extension { #name : #TaAliasMethod }
+Extension { #name : 'TaAliasMethod' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 TaAliasMethod >> moveToPermSpace: aPermSpace [
 
 	(aPermSpace isInPermSpace: self)

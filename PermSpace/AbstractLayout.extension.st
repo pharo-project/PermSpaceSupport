@@ -1,6 +1,6 @@
-Extension { #name : #AbstractLayout }
+Extension { #name : 'AbstractLayout' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 AbstractLayout >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)

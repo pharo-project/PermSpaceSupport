@@ -1,6 +1,6 @@
-Extension { #name : #HashedCollection }
+Extension { #name : 'HashedCollection' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 HashedCollection >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

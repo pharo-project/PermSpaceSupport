@@ -1,6 +1,6 @@
-Extension { #name : #WeakValueAssociation }
+Extension { #name : 'WeakValueAssociation' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 WeakValueAssociation >> moveToPermSpace: aPermSpace [
 
 	" I should not move to PermSpace"

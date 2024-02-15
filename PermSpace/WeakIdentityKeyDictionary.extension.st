@@ -1,12 +1,12 @@
-Extension { #name : #WeakIdentityKeyDictionary }
+Extension { #name : 'WeakIdentityKeyDictionary' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 WeakIdentityKeyDictionary >> moveToPermSpace: permSpace [
 
 
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 WeakIdentityKeyDictionary >> moveToPermSpaceWithContent: permSpace [
 
 

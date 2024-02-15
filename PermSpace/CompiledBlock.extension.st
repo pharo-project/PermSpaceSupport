@@ -1,6 +1,6 @@
-Extension { #name : #CompiledBlock }
+Extension { #name : 'CompiledBlock' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 CompiledBlock >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

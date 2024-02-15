@@ -1,6 +1,6 @@
-Extension { #name : #ByteSymbol }
+Extension { #name : 'ByteSymbol' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 ByteSymbol >> moveToPermSpaceWithContent: permSpace [
 	
 	self moveToPermSpace: permSpace

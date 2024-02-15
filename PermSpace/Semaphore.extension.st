@@ -1,6 +1,6 @@
-Extension { #name : #Semaphore }
+Extension { #name : 'Semaphore' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Semaphore >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)

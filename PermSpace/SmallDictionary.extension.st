@@ -1,6 +1,6 @@
-Extension { #name : #SmallDictionary }
+Extension { #name : 'SmallDictionary' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 SmallDictionary >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)
@@ -13,7 +13,7 @@ SmallDictionary >> moveToPermSpace: permSpace [
 	size moveToPermSpace: permSpace
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 SmallDictionary >> moveToPermSpaceWithContent: permSpace [
 	
 	(permSpace isInPermSpace: self)

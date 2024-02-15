@@ -1,6 +1,6 @@
-Extension { #name : #Protocol }
+Extension { #name : 'Protocol' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Protocol >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)

@@ -1,6 +1,6 @@
-Extension { #name : #WorldMorph }
+Extension { #name : 'WorldMorph' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 WorldMorph >> moveToPermSpace: aPermSpaceInBulk [ 
 	
 	"I will not move the WorldMorph"

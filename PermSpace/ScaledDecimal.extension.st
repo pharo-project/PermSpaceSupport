@@ -1,6 +1,6 @@
-Extension { #name : #ScaledDecimal }
+Extension { #name : 'ScaledDecimal' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 ScaledDecimal >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

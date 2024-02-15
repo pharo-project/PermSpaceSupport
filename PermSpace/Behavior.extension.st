@@ -1,6 +1,6 @@
-Extension { #name : #Behavior }
+Extension { #name : 'Behavior' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Behavior >> withAllSuperclassesUntil: untilClass [ 
 	
 	| sprClass |

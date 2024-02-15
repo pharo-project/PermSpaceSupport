@@ -1,6 +1,6 @@
-Extension { #name : #SystemDictionary }
+Extension { #name : 'SystemDictionary' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 SystemDictionary >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)
@@ -9,7 +9,7 @@ SystemDictionary >> moveToPermSpace: permSpace [
 	permSpace primMoveToPermSpace: self
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 SystemDictionary >> moveToPermSpaceWithContent: permSpace [
 
 	(permSpace isInPermSpace: self)

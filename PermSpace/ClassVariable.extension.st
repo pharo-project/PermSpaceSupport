@@ -1,6 +1,6 @@
-Extension { #name : #ClassVariable }
+Extension { #name : 'ClassVariable' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 ClassVariable >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)
@@ -10,7 +10,7 @@ ClassVariable >> moveToPermSpace: permSpace [
 	name moveToPermSpace: permSpace 
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 ClassVariable >> moveToPermSpaceWithContent: permSpace [
 	
 	self moveToPermSpace: permSpace.

@@ -1,6 +1,6 @@
-Extension { #name : #Slot }
+Extension { #name : 'Slot' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Slot >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)

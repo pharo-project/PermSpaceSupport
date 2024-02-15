@@ -1,6 +1,6 @@
-Extension { #name : #Object }
+Extension { #name : 'Object' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Object >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)
@@ -9,7 +9,7 @@ Object >> moveToPermSpace: permSpace [
 	permSpace primMoveToPermSpace: self
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Object >> moveToPermSpaceWithContent: permSpace [ 
 
 	self moveToPermSpace: permSpace

@@ -1,6 +1,6 @@
-Extension { #name : #AdditionalBinding }
+Extension { #name : 'AdditionalBinding' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 AdditionalBinding >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)

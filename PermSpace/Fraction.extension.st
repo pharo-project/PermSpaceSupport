@@ -1,6 +1,6 @@
-Extension { #name : #Fraction }
+Extension { #name : 'Fraction' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Fraction >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

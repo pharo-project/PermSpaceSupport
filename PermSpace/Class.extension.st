@@ -1,6 +1,6 @@
-Extension { #name : #Class }
+Extension { #name : 'Class' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Class >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)
@@ -9,8 +9,10 @@ Class >> moveToPermSpace: permSpace [
 	permSpace primMoveToPermSpace: self.
 
 	methodDict moveToPermSpace: permSpace.
+
 	layout moveToPermSpace: permSpace.
-	organization moveToPermSpace: permSpace.
+
+	protocols moveToPermSpaceWithContent: permSpace.
 	name moveToPermSpace: permSpace.
 	
 	classPool ifNotNil: [
@@ -19,7 +21,7 @@ Class >> moveToPermSpace: permSpace [
 			e moveToPermSpaceWithContent: permSpace ]].
 	
 	subclasses ifNotNil: [subclasses moveToPermSpace: permSpace].
-	category moveToPermSpace: permSpace.
+	packageTag moveToPermSpace: permSpace.
 	sharedPools moveToPermSpace: permSpace.
 
 	environment moveToPermSpace: permSpace.

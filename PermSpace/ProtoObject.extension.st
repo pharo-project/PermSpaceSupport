@@ -1,6 +1,6 @@
-Extension { #name : #ProtoObject }
+Extension { #name : 'ProtoObject' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 ProtoObject >> primIsInPermSpace [ 
 
 	<primitive: 92 error: ec>
@@ -8,7 +8,7 @@ ProtoObject >> primIsInPermSpace [
 	^ self primitiveFailed
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 ProtoObject >> primMoveToPermSpace [
 
 	<primitive: 90 error: ec>

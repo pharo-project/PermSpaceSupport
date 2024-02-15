@@ -1,6 +1,6 @@
-Extension { #name : #TaPrecedenceComposition }
+Extension { #name : 'TaPrecedenceComposition' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 TaPrecedenceComposition >> moveToPermSpace: aPermSpace [
 
 	super moveToPermSpace: aPermSpace.

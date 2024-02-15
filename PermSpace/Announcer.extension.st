@@ -1,6 +1,6 @@
-Extension { #name : #Announcer }
+Extension { #name : 'Announcer' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Announcer >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

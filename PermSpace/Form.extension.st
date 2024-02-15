@@ -1,6 +1,6 @@
-Extension { #name : #Form }
+Extension { #name : 'Form' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Form >> moveToPermSpace: aPermSpace [ 
 
 	(aPermSpace isInPermSpace: self)

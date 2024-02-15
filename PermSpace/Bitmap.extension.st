@@ -1,6 +1,6 @@
-Extension { #name : #Bitmap }
+Extension { #name : 'Bitmap' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Bitmap >> moveToPermSpace: aPermSpace [ 
 
 	(aPermSpace isInPermSpace: self)

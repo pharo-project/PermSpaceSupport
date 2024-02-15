@@ -1,6 +1,6 @@
-Extension { #name : #Dictionary }
+Extension { #name : 'Dictionary' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Dictionary >> moveToPermSpaceWithContent: permSpace [
 
 	(permSpace isInPermSpace: self)

@@ -1,6 +1,6 @@
-Extension { #name : #Array }
+Extension { #name : 'Array' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Array >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)
@@ -9,7 +9,7 @@ Array >> moveToPermSpace: permSpace [
 	permSpace primMoveToPermSpace: self
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Array >> moveToPermSpaceWithContent: permSpace [
 
 	(permSpace isInPermSpace: self)
@@ -19,7 +19,7 @@ Array >> moveToPermSpaceWithContent: permSpace [
 	self do: [ :e | e moveToPermSpaceWithContent: permSpace ]
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Array >> primMoveToPermSpaceInBulk [
 
 	<primitive: 91 error: ec>

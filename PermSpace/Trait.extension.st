@@ -1,6 +1,6 @@
-Extension { #name : #Trait }
+Extension { #name : 'Trait' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Trait >> moveToPermSpace: permSpace [
 	
 	super moveToPermSpace: permSpace.

@@ -1,10 +1,11 @@
 Class {
-	#name : #PermSpaceTest,
-	#superclass : #TestCase,
-	#category : #PermSpace
+	#name : 'PermSpaceTest',
+	#superclass : 'TestCase',
+	#category : 'PermSpace',
+	#package : 'PermSpace'
 }
 
-{ #category : #tests }
+{ #category : 'tests' }
 PermSpaceTest >> testMoveObjectCanBeReferenced [
 
 	| x |
@@ -14,7 +15,7 @@ PermSpaceTest >> testMoveObjectCanBeReferenced [
 	self assert: x equals: (String loremIpsum: 50)
 ]
 
-{ #category : #tests }
+{ #category : 'tests' }
 PermSpaceTest >> testPermanentMethodCanBeExecuted [
 
 	| anObject |

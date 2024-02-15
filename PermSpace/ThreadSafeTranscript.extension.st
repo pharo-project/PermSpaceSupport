@@ -1,6 +1,6 @@
-Extension { #name : #ThreadSafeTranscript }
+Extension { #name : 'ThreadSafeTranscript' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 ThreadSafeTranscript >> moveToPermSpace: aPermSpaceInBulk [ 
 	
 	"I will ignore ThreadSafeTranscript"

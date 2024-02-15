@@ -1,6 +1,6 @@
-Extension { #name : #LargeInteger }
+Extension { #name : 'LargeInteger' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 LargeInteger >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

@@ -1,6 +1,6 @@
-Extension { #name : #Context }
+Extension { #name : 'Context' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Context >> moveToPermSpace: aPermSpace [
 	
 	"I don't move myself to the permSpace"

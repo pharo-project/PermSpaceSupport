@@ -1,6 +1,6 @@
-Extension { #name : #Collection }
+Extension { #name : 'Collection' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Collection >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)
@@ -12,7 +12,7 @@ Collection >> moveToPermSpace: permSpace [
 		e moveToPermSpaceWithContent: e].
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Collection >> moveToPermSpaceWithContent: permSpace [
 	
 	self moveToPermSpace: permSpace 

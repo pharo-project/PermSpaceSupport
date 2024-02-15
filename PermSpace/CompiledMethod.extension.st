@@ -1,6 +1,6 @@
-Extension { #name : #CompiledMethod }
+Extension { #name : 'CompiledMethod' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 CompiledMethod >> moveToPermSpace: permSpace [
 
 	"If it is a FFI method we ignore it"

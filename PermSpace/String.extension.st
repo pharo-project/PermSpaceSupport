@@ -1,6 +1,6 @@
-Extension { #name : #String }
+Extension { #name : 'String' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 String >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)

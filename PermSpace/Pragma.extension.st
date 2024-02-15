@@ -1,6 +1,6 @@
-Extension { #name : #Pragma }
+Extension { #name : 'Pragma' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Pragma >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)

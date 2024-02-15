@@ -1,6 +1,6 @@
-Extension { #name : #TaSequence }
+Extension { #name : 'TaSequence' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 TaSequence >> moveToPermSpace: aPermSpace [
 
 	(aPermSpace isInPermSpace: self)

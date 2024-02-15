@@ -1,10 +1,11 @@
 Class {
-	#name : #APermClass,
-	#superclass : #Object,
-	#category : #PermSpace
+	#name : 'APermClass',
+	#superclass : 'Object',
+	#category : 'PermSpace',
+	#package : 'PermSpace'
 }
 
-{ #category : #'test methods' }
+{ #category : 'test methods' }
 APermClass >> aMethod [
 
 	^ 10 factorial

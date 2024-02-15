@@ -1,6 +1,6 @@
-Extension { #name : #CleanBlockClosure }
+Extension { #name : 'CleanBlockClosure' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 CleanBlockClosure >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

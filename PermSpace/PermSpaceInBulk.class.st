@@ -1,13 +1,14 @@
 Class {
-	#name : #PermSpaceInBulk,
-	#superclass : #Object,
+	#name : 'PermSpaceInBulk',
+	#superclass : 'Object',
 	#instVars : [
 		'objects'
 	],
-	#category : #PermSpace
+	#category : 'PermSpace',
+	#package : 'PermSpace'
 }
 
-{ #category : #api }
+{ #category : 'api' }
 PermSpaceInBulk >> flush [
 
 	| originalObjects filterObjects statusString |
@@ -32,20 +33,20 @@ PermSpaceInBulk >> flush [
 	^ statusString.
 ]
 
-{ #category : #initialization }
+{ #category : 'initialization' }
 PermSpaceInBulk >> initialize [
 
 	super initialize.
 	objects := IdentitySet new
 ]
 
-{ #category : #api }
+{ #category : 'api' }
 PermSpaceInBulk >> isInPermSpace: anObj [
 
 	^ objects includes: anObj
 ]
 
-{ #category : #api }
+{ #category : 'api' }
 PermSpaceInBulk >> isValidToMoveToPermSpace: anObject [
 
 	| anObjectClass |
@@ -69,7 +70,7 @@ PermSpaceInBulk >> isValidToMoveToPermSpace: anObject [
 	^ true
 ]
 
-{ #category : #api }
+{ #category : 'api' }
 PermSpaceInBulk >> primMoveToPermSpace: obj [
 
 	objects add: obj

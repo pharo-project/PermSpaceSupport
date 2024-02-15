@@ -1,6 +1,6 @@
-Extension { #name : #CompiledCode }
+Extension { #name : 'CompiledCode' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 CompiledCode >> moveToPermSpaceWithContent: permSpace [
 	
 	self moveToPermSpace: permSpace

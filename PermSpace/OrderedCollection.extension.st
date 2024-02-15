@@ -1,6 +1,6 @@
-Extension { #name : #OrderedCollection }
+Extension { #name : 'OrderedCollection' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 OrderedCollection >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)
@@ -11,7 +11,7 @@ OrderedCollection >> moveToPermSpace: permSpace [
 	array moveToPermSpace: permSpace
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 OrderedCollection >> moveToPermSpaceWithContent: permSpace [
 
 	(permSpace isInPermSpace: self)

@@ -1,6 +1,6 @@
-Extension { #name : #Set }
+Extension { #name : 'Set' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Set >> moveToPermSpaceWithContent: permSpace [ 
 	
 	(permSpace isInPermSpace: self)

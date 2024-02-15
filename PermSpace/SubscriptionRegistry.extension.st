@@ -1,6 +1,6 @@
-Extension { #name : #SubscriptionRegistry }
+Extension { #name : 'SubscriptionRegistry' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 SubscriptionRegistry >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

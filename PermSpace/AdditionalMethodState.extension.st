@@ -1,6 +1,6 @@
-Extension { #name : #AdditionalMethodState }
+Extension { #name : 'AdditionalMethodState' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 AdditionalMethodState >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)

@@ -1,12 +1,12 @@
-Extension { #name : #WeakArray }
+Extension { #name : 'WeakArray' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 WeakArray >> moveToPermSpace: permSpace [
 
 
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 WeakArray >> moveToPermSpaceWithContent: permSpace [
 
 

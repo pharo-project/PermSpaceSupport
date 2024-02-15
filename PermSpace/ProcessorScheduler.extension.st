@@ -1,6 +1,6 @@
-Extension { #name : #ProcessorScheduler }
+Extension { #name : 'ProcessorScheduler' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 ProcessorScheduler >> moveToPermSpace: aPermSpaceInBulk [ 
 	
 	"I ignore processor scheduler"

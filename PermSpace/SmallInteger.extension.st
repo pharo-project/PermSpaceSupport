@@ -1,6 +1,6 @@
-Extension { #name : #SmallInteger }
+Extension { #name : 'SmallInteger' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 SmallInteger >> moveToPermSpace: anObject [
 	
 	"I do nothing"

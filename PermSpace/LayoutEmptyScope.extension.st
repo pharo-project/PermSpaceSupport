@@ -1,12 +1,12 @@
-Extension { #name : #LayoutEmptyScope }
+Extension { #name : 'LayoutEmptyScope' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 LayoutEmptyScope >> isLayoutEmpty [
 
 	^ true
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 LayoutEmptyScope >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)

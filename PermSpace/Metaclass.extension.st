@@ -1,6 +1,6 @@
-Extension { #name : #Metaclass }
+Extension { #name : 'Metaclass' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 Metaclass >> moveToPermSpace: permSpace [
 
 	(permSpace isInPermSpace: self)
@@ -10,5 +10,5 @@ Metaclass >> moveToPermSpace: permSpace [
 
 	methodDict moveToPermSpace: permSpace .
 	layout moveToPermSpace: permSpace .
-	organization moveToPermSpace: permSpace 
+	protocols moveToPermSpaceWithContent: permSpace 
 ]

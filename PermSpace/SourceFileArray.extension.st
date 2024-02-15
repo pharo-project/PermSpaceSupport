@@ -1,6 +1,6 @@
-Extension { #name : #SourceFileArray }
+Extension { #name : 'SourceFileArray' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 SourceFileArray >> moveToPermSpace: aPermSpace [ 
 
 	"I will not move the SourceFileArray"

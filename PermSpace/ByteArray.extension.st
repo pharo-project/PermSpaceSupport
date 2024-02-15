@@ -1,6 +1,6 @@
-Extension { #name : #ByteArray }
+Extension { #name : 'ByteArray' }
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 ByteArray >> moveToPermSpace: permSpace [
 	
 	(permSpace isInPermSpace: self)
@@ -9,7 +9,7 @@ ByteArray >> moveToPermSpace: permSpace [
 	permSpace primMoveToPermSpace: self
 ]
 
-{ #category : #'*PermSpace' }
+{ #category : '*PermSpace' }
 ByteArray >> moveToPermSpaceWithContent: permSpace [
 	
 	self moveToPermSpace: permSpace
